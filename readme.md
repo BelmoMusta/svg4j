@@ -1,2 +1,2 @@
 # svg4j
-Battel dev java testing template
+SVG tools written in java.
