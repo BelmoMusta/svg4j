@@ -1,5 +1,6 @@
 package musta.belmo.svg;
 
+
 import java.awt.*;
 
 public interface AbstractShape {

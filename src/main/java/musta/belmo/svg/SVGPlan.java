@@ -16,8 +16,8 @@ public class SVGPlan {
 
     private List<AbstractShape> elements = new ArrayList<>();
 
-    public boolean add(AbstractShape shape) {
-        return elements.add(shape);
+    public void add(AbstractShape shape) {
+        elements.add(shape);
     }
 
     public SVGGraphics2D render() {
@@ -36,7 +36,7 @@ public class SVGPlan {
             graphics2D.setFont(textShape.getFont());
             graphics2D.drawString(textShape.getTextValue(),
                     (int) textShape.getPosition().getX(),
-                    (int) (  textShape.getPosition().getY()));
+                    (int) (textShape.getPosition().getY()));
         });
 
         return graphics2D;

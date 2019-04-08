@@ -4,6 +4,7 @@ import java.awt.*;
 
 public class TextShape extends StrokeShape {
 
+    private static final int OFFSET = 24;
     private String textValue;
     private Point position;
 
@@ -17,8 +18,8 @@ public class TextShape extends StrokeShape {
         this(textValue, new Point(x, y));
     }
 
-    public TextShape(String textValue, Shape container) {
-        super(container);
+    public TextShape(String textValue, AbstractShape container) {
+        super(container.getShape());
         this.textValue = textValue;
     }
 
@@ -41,7 +42,7 @@ public class TextShape extends StrokeShape {
             Rectangle bounds = getShape().getBounds();
             currentPosition = new Point((int) bounds.getCenterX(), (int) bounds.getCenterY());
         }
-        currentPosition.y += 24 * 0.3;
+        currentPosition.y += OFFSET * 0.3;
         currentPosition.x -= getTextValue().length() * 7;
         return currentPosition;
 
@@ -49,6 +50,6 @@ public class TextShape extends StrokeShape {
 
     @Override
     public Font getFont() {
-        return new Font("TimesRoman", Font.PLAIN, 24);
+        return new Font("TimesRoman", Font.PLAIN, OFFSET);
     }
 }

@@ -1,9 +1,11 @@
-package musta.belmo.svg;
-
+import musta.belmo.svg.AbstractShape;
+import musta.belmo.svg.Factory;
+import musta.belmo.svg.SVGPlan;
+import musta.belmo.svg.TextShape;
 import org.jfree.graphics2d.svg.SVGGraphics2D;
+import org.junit.Test;
 
 import java.awt.*;
-import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 import java.io.BufferedWriter;
 import java.io.FileOutputStream;
@@ -13,16 +15,13 @@ import java.io.OutputStreamWriter;
 
 public class TestSVG {
 
-    static String generateClassShape(int x, int y, int size, String className) {
+    public String generateClassShape(int x, int y, int size, String className) {
         SVGPlan g2 = new SVGPlan(10240, 7680);
 
         int rectWidth = (int) (4.5 * size);
-        Rectangle rect = new Rectangle(x + size / 2, (int) (y + size * .05), rectWidth, (int) (size * .9));
-        Ellipse2D.Double ellipse = new Ellipse2D.Double(x, y, size, size);
-
-        AbstractShape rectangleShape = new FilledShape(rect);
-        AbstractShape textShape = new TextShape(className, rect);
-        AbstractShape ellipseShape = new FilledShape(ellipse);
+        AbstractShape rectangleShape = Factory.createRectangle(x + size / 2, (int) (y + size * .05), rectWidth, (int) (size * .9));
+        AbstractShape textShape = new TextShape(className, rectangleShape);
+        AbstractShape ellipseShape = Factory.createEllipse(x, y, size, size);
         AbstractShape rectangleStroke = rectangleShape.getStroke();
         AbstractShape ellipseStroke = ellipseShape.getStroke();
 
@@ -41,13 +40,13 @@ public class TestSVG {
         return g2.render().getSVGDocument();
     }
 
-    private static Shape getLine(int fromX, int fromY, int toX, int toY) {
+    private Shape getLine(int fromX, int fromY, int toX, int toY) {
         return new Line2D.Double(fromX, fromY, toX, toY);
     }
 
-
-    public static void main(String[] args) throws Exception {
-        BufferedWriter writer ;
+    @Test
+    public void testGenerateSvg() throws Exception {
+        BufferedWriter writer;
         FileOutputStream fos = new FileOutputStream("SVGDemo1.svg");
         OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
         writer = new BufferedWriter(osw);
