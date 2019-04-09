@@ -2,6 +2,7 @@ package musta.belmo.svg;
 
 
 import java.awt.*;
+import java.awt.geom.Area;
 
 public interface AbstractShape {
     boolean isFill();
@@ -13,6 +14,7 @@ public interface AbstractShape {
     void setColor(Color color);
 
     AbstractShape getStroke();
+
     boolean isGeometricShape();
 
     String getTextValue();
@@ -20,4 +22,6 @@ public interface AbstractShape {
     Point getPosition();
 
     Font getFont();
+
+    Area toArea();
 }

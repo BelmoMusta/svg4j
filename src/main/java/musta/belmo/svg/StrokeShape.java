@@ -1,6 +1,7 @@
 package musta.belmo.svg;
 
 import java.awt.*;
+import java.awt.geom.Area;
 
 public class StrokeShape implements AbstractShape {
     public StrokeShape(Shape mShape) {
@@ -48,6 +49,12 @@ public class StrokeShape implements AbstractShape {
     public Font getFont() {
         return null;
     }
+
+    @Override
+    public Area toArea() {
+        return new Area(getShape());
+    }
+
 
     @Override
     public boolean isFill() {

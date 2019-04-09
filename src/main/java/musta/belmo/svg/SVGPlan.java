@@ -41,4 +41,8 @@ public class SVGPlan {
 
         return graphics2D;
     }
+
+    public void addAll(List<AbstractShape> shapeFor) {
+        elements.addAll(shapeFor);
+    }
 }
