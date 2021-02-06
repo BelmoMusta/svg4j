@@ -10,6 +10,7 @@ import com.github.javaparser.ast.modules.*;
 import com.github.javaparser.ast.stmt.*;
 import com.github.javaparser.ast.type.*;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
+import musta.belmo.svg.shapes.AbstractShape;
 
 import java.util.List;
 
@@ -178,6 +179,9 @@ public class NodeToShapeVisitor extends VoidVisitorAdapter<List<AbstractShape>> 
 
     @Override
     public void visit(FieldDeclaration n, List<AbstractShape> arg) {
+        AbstractShape rectangle = Factory.createTextShape("n.getNameAsString()", 30, 50 + 80 * methodLevel, 100, 100);
+        arg.add(rectangle);
+        methodLevel++;
         super.visit(n, arg);
     }
 

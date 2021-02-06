@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="509px"
+     height="486px" viewBox="-0.5 -0.5 509 486">
+
+    <g> <!-- CLASS -->
+        <rect x="50" y="0" width="350" height="80" fill="#fff2cc" stroke="#d6b656" pointer-events="all"/>
+        <text x="225" y="44" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle"
+              font-weight="bold">class Example
+        </text>
+        <ellipse cx="40" cy="40" rx="40" ry="40" fill="#fff2cc" stroke="#d6b656" pointer-events="all"/>
+        <text x="40" y="44" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+            public
+        </text>
+    </g> <!-- CLASS -->
+    <g> <!-- STATIC -->
+        <rect x="90" y="110" width="110" height="20" fill="#fff2cc" stroke="#d6b656" pointer-events="all"/>
+        <text x="140" y="124" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+            static int h
+        </text>
+    </g>
+    <g>
+        <rect x="80" y="140" width="110" height="20" fill="#e1d5e7" stroke="#b85450" pointer-events="all"/>
+        <text x="90" y="154" fill="#000000" font-family="Helvetica" font-size="12px">int y</text>
+    </g>
+    <g>
+        <rect x="80" y="170" width="110" height="20" fill="#f8cecc" stroke="#b85450" pointer-events="all"/>
+        <rect x="133" y="290" width="300" height="20" fill="#dae8fc" stroke="#6c8ebf" pointer-events="all"/>
+        <rect x="133" y="320" width="300" height="20" fill="#dae8fc" stroke="#6c8ebf" pointer-events="all"/>
+        <rect x="162" y="370" width="110" height="20" fill="#e1d5e7" stroke="#9673a6" pointer-events="all"/>
+        <rect x="167" y="430" width="300" height="20" fill="#dae8fc" stroke="#6c8ebf" pointer-events="all"/>
+
+        <rect x="167" y="465" width="300" height="20" fill="#dae8fc" stroke="#6c8ebf" pointer-events="all"/>
+        <text x="177" y="479" fill="#000000" font-family="Helvetica" font-size="12px">System.out.printn(sb)
+        </text>
+
+    </g>
+
+    <path d="M 165.88 440 L 158.88 443.5 L 160.63 440 L 158.88 436.5 Z" fill="#000000" stroke="#000000"
+          stroke-miterlimit="10" pointer-events="all"/>
+    <path d="M 132 350 L 162 380 L 132 410 L 102 380 Z" fill="#e1d5e7" stroke="#9673a6" stroke-miterlimit="10"
+          pointer-events="all"/>
+    <path d="M 132 410 L 132 440 L 160.63 440" fill="none" stroke="#000000" stroke-miterlimit="10"
+          pointer-events="stroke"/>
+    <text x="132" y="384" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+        while
+    </text>
+
+    <path d="M 89.39 254.09 L 89.4 300 L 126.63 300" fill="none" stroke="#000000" stroke-miterlimit="10"
+          pointer-events="stroke"/>
+    <path d="M 131.88 300 L 124.88 303.5 L 126.63 300 L 124.88 296.5 Z" fill="#000000" stroke="#000000"
+          stroke-miterlimit="10" pointer-events="all"/>
+    <path d="M 89.39 254.09 L 89.4 330 L 126.63 330" fill="none" stroke="#000000" stroke-miterlimit="10"
+          pointer-events="stroke"/>
+    <path d="M 131.88 330 L 124.88 333.5 L 126.63 330 L 124.88 326.5 Z" fill="#000000" stroke="#000000"
+          stroke-miterlimit="10" pointer-events="all"/>
+    <path d="M 89.39 254.09 L 89 380 L 95.63 380" fill="none" stroke="#000000" stroke-miterlimit="10"
+          pointer-events="stroke"/>
+    <path d="M 100.88 380 L 93.88 383.5 L 95.63 380 L 93.88 376.5 Z" fill="#000000" stroke="#000000"
+          stroke-miterlimit="10" pointer-events="all"/>
+    <path d="M 89.39 254.09 L 89 475 L 160.63 475" fill="none" stroke="#000000" stroke-miterlimit="10"
+          pointer-events="stroke"/>
+    <path d="M 165.88 475 L 158.88 478.5 L 160.63 475 L 158.88 471.5 Z" fill="#000000" stroke="#000000"
+          stroke-miterlimit="10" pointer-events="all"/>
+    <path d="M 100 210 L 370 210 L 390 240 L 370 270 L 100 270 L 80 240 Z" fill="#d5e8d4" stroke="#82b366"
+          stroke-miterlimit="10" pointer-events="all"/>
+    <text x="235" y="244" fill="#000000" font-family="Helvetica" font-size="12px" text-anchor="middle">
+        public void print()
+    </text>
+
+    <text x="90" y="184" fill="#000000" font-family="Helvetica" font-size="12px">int x</text>
+    <text x="143" y="304" fill="#000000" font-family="Helvetica" font-size="12px">StringBuilder sb = new
+        StringBuilder()
+    </text>
+    <text x="143" y="334" fill="#000000" font-family="Helvetica" font-size="12px">int counter = 0</text>
+    <text x="172" y="384" fill="#000000" font-family="Helvetica" font-size="12px">counter &lt; 10</text>
+    <path d="M 40 80 L 40 120 L 83.63 120" fill="none" stroke="#000000" stroke-miterlimit="10"
+          pointer-events="stroke"/>
+    <path d="M 88.88 120 L 81.88 123.5 L 83.63 120 L 81.88 116.5 Z" fill="#000000" stroke="#000000"
+          stroke-miterlimit="10" pointer-events="all"/>
+    <path d="M 40 80 L 40 150 L 73.63 150" fill="none" stroke="#000000" stroke-miterlimit="10"
+          pointer-events="stroke"/>
+    <path d="M 78.88 150 L 71.88 153.5 L 73.63 150 L 71.88 146.5 Z" fill="#000000" stroke="#000000"
+          stroke-miterlimit="10" pointer-events="all"/>
+    <path d="M 40 80 L 40 180 L 73.63 180" fill="none" stroke="#000000" stroke-miterlimit="10"
+          pointer-events="stroke"/>
+    <path d="M 78.88 180 L 71.88 183.5 L 73.63 180 L 71.88 176.5 Z" fill="#000000" stroke="#000000"
+          stroke-miterlimit="10" pointer-events="all"/>
+    <path d="M 40 80 L 40 240 L 73.63 240" fill="none" stroke="#000000" stroke-miterlimit="10"
+          pointer-events="stroke"/>
+    <path d="M 78.88 240 L 71.88 243.5 L 73.63 240 L 71.88 236.5 Z" fill="#000000" stroke="#000000"
+          stroke-miterlimit="10" pointer-events="all"/>
+
+    <path d="M 467 440 L 500 440 L 500 380 L 278.37 380" fill="none" stroke="#000000" stroke-miterlimit="10"
+          pointer-events="stroke"/>
+    <path d="M 273.12 380 L 280.12 376.5 L 278.37 380 L 280.12 383.5 Z" fill="#000000" stroke="#000000"
+          stroke-miterlimit="10" pointer-events="all"/>
+    <text x="177" y="444" fill="#000000" font-family="Helvetica" font-size="12px">sb.append("line
+        ").append(counter++)
+    </text>
+
+
+</svg>

@@ -1,5 +1,6 @@
 package musta.belmo.svg;
 
+import musta.belmo.svg.shapes.AbstractShape;
 import org.jfree.graphics2d.svg.SVGGraphics2D;
 
 import java.util.ArrayList;
@@ -15,10 +16,6 @@ public class SVGPlan {
     }
 
     private List<AbstractShape> elements = new ArrayList<>();
-
-    public void add(AbstractShape shape) {
-        elements.add(shape);
-    }
 
     public SVGGraphics2D render() {
         SVGGraphics2D graphics2D = new SVGGraphics2D(width, height);

@@ -1,4 +1,4 @@
-package musta.belmo.svg;
+package musta.belmo.svg.shapes;
 
 import java.awt.*;
 import java.awt.geom.Area;

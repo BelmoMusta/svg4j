@@ -1,5 +1,9 @@
 package musta.belmo.svg;
 
+import musta.belmo.svg.shapes.AbstractShape;
+import musta.belmo.svg.shapes.FilledShape;
+import musta.belmo.svg.shapes.TextShape;
+
 import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.util.ArrayList;
